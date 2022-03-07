@@ -1,0 +1,37 @@
+// https://code.visualstudio.com/docs/remote/containers
+// https://github.com/microsoft/vscode-dev-containers/tree/master/containers/python-3-postgres
+{
+	"name": "Lokafy Neo Backend",
+	"dockerComposeFile": "../.devcontainer/docker-compose.yml",
+	"service": "backend",
+	"workspaceFolder": "/workspace/backend",
+
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"python.pythonPath": "/usr/local/bin/python",
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": true,
+		"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+		"python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+		"python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
+		"python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
+		"python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
+		"python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
+		"python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
+		"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
+		"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
+		"python.testing.pytestPath": "/usr/local/py-utils/bin/pytest"
+	},
+
+	"extensions": [
+		"ms-python.python",
+		"bungcip.better-toml",
+		"gruntfuggly.todo-tree",
+		"aki12n.multiwindows-highlight",
+		"littlefoxteam.vscode-python-test-adapter",
+		"mhutchie.git-graph",
+		"ms-python.vscode-pylance",
+		"eamodio.gitlens",
+        "octref.vetur"
+	],
+}
