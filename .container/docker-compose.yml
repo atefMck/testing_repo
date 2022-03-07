@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  frontend:
+    container_name: frontend_app_test
+    build: 
+      context: ../frontend
+      dockerfile: ../frontend/.container/Dockerfile
+    command: sleep infinity
+  
+  backend:
+    container_name: backend_app_test
+    build: 
+      context: ../backend
+      dockerfile: ../backend/.container/Dockerfile
+    command: sleep infinity
+
